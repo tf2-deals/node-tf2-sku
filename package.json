@@ -7,6 +7,9 @@
   "author": "Emir Güvenni <contact@emirguvenni.com>",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "jest"
   },
