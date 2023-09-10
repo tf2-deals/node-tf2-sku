@@ -1,6 +1,20 @@
 # node-tf2-sku
 
-Format items as strings or objects
+Format items as strings or objects. This package is a rewrite of [node-tf2-sku](https://github.com/Nicklason/node-tf2-sku)
+
+## Installation
+
+### NPM
+
+```sh
+npm install @tf2deals/tf2-sku
+```
+
+### Yarn
+
+```sh
+yarn add @tf2deals/tf2-sku
+```
 
 ## What is an SKU
 
@@ -26,12 +40,6 @@ const item = SKU.fromString(sku);
     killstreak: 0,
     australium: false,
     festive: false,
-    effect: null,
-    paintkit: null,
-    wear: null,
-    quality2: null,
-    target: null,
-    craftnumber: null
 }
 */
 ```
@@ -41,18 +49,12 @@ import SKU from '@tf2deals/tf2-sku';
 
 // Mann Co. Supply Crate Key
 const item = {
-    defindex: 5021,
-    quality: 6,
-    craftable: true,
-    killstreak: 0,
-    australium: false,
-    festive: false,
-    effect: null,
-    paintkit: null,
-    wear: null,
-    quality2: null,
-    target: null,
-    craftnumber: null
+  defindex: 5021,
+  quality: 6,
+  craftable: true,
+  killstreak: 0,
+  australium: false,
+  festive: false,
 };
 
 // Converts the item object into an sku string
