@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Format items as strings or objects",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:tf2-deals/node-tf2-sku.git",
   "author": "Emir Güvenni <contact@emirguvenni.com>",
   "license": "MIT",
