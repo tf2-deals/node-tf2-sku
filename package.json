@@ -11,6 +11,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "tf2",
+    "tf",
+    "sku",
+    "team fortress 2",
+    "team fortress"
+  ],
   "scripts": {
     "build": "tsc -p .",
     "test": "jest"
