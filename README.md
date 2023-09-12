@@ -40,6 +40,12 @@ const item = SKU.fromString(sku);
     killstreak: 0,
     australium: false,
     festive: false,
+    effect: null,
+    paintkit: null,
+    wear: null,
+    quality2: null,
+    target: null,
+    craftnumber: null
 }
 */
 ```
