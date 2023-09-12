@@ -1,21 +1,21 @@
 export interface Item {
   defindex: number;
   quality: number;
-  tradable: boolean;
   craftable: boolean;
+  tradable: boolean;
   killstreak: number;
   australium: boolean;
+  effect: number | null;
   festive: boolean;
-  effect?: number;
-  paintkit?: number;
-  wear?: number;
-  quality2?: number;
-  target?: number;
-  craftnumber?: number;
-  crateseries?: number;
-  output?: number;
-  outputQuality?: number;
-  paint?: number;
+  paintkit: number | null;
+  wear: number | null;
+  quality2: number | null;
+  craftnumber: number | null;
+  crateseries: number | null;
+  target: number | null;
+  output: number | null;
+  outputQuality: number | null;
+  paint: number | null;
 }
 
 export const TEMPLATE: Item = {
@@ -25,7 +25,17 @@ export const TEMPLATE: Item = {
   tradable: true,
   killstreak: 0,
   australium: false,
+  effect: null,
   festive: false,
+  paintkit: null,
+  wear: null,
+  quality2: null,
+  craftnumber: null,
+  crateseries: null,
+  target: null,
+  output: null,
+  outputQuality: null,
+  paint: null,
 };
 
 /**
