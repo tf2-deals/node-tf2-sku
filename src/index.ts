@@ -78,24 +78,24 @@ export default class SKU {
       else if (section === 'australium') item.australium = true;
       else if (section === 'festive') item.festive = true;
       else if (section === 'strange') item.quality2 = 11;
-      else if (section.startsWith('kt') && isNum(section.substring(2)))
-        item.killstreak = parseInt(section.substring(2));
+      else if (section.startsWith('kt-') && isNum(section.substring(3)))
+        item.killstreak = parseInt(section.substring(3));
       else if (section.startsWith('u') && isNum(section.substring(1)))
         item.effect = parseInt(section.substring(1));
       else if (section.startsWith('pk') && isNum(section.substring(2)))
         item.paintkit = parseInt(section.substring(2));
       else if (section.startsWith('w') && isNum(section.substring(1)))
         item.wear = parseInt(section.substring(1));
-      else if (section.startsWith('td') && isNum(section.substring(2)))
-        item.target = parseInt(section.substring(2));
+      else if (section.startsWith('td-') && isNum(section.substring(3)))
+        item.target = parseInt(section.substring(3));
       else if (section.startsWith('n') && isNum(section.substring(1)))
         item.craftnumber = parseInt(section.substring(1));
       else if (section.startsWith('c') && isNum(section.substring(1)))
         item.crateseries = parseInt(section.substring(1));
-      else if (section.startsWith('od') && isNum(section.substring(2)))
-        item.output = parseInt(section.substring(2));
-      else if (section.startsWith('oq') && isNum(section.substring(2)))
-        item.outputQuality = parseInt(section.substring(2));
+      else if (section.startsWith('od-') && isNum(section.substring(3)))
+        item.output = parseInt(section.substring(3));
+      else if (section.startsWith('oq-') && isNum(section.substring(3)))
+        item.outputQuality = parseInt(section.substring(3));
       else if (
         !ignorePaint &&
         section.startsWith('p') &&
@@ -141,5 +141,5 @@ export default class SKU {
 }
 
 function isNum(test: string): boolean {
-  return /^-{0,1}\d+$/.test(test);
+  return !Number.isNaN(Number(test));
 }
